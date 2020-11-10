@@ -9,11 +9,11 @@ body {
   margin-top: 0
 }
 body.light {
-  --primary-color: #381696;
+  --primary-color: #800b21;
   --primary-text-color: #fff;
   --featured-bg: #493b8a;
   --featured-text: #fff;
-  --secondary-color: #10072b;
+  --secondary-color: #c71233;
   --background: #fff;
   --site-header: var(--background);
   --card-bg: #fff;
@@ -34,7 +34,7 @@ body.dark {
   --featured-bg: #66578d;
   --featured-text: #fff;
   --secondary-color: #66578d;
-  --background: #0A041A;
+  --background: #121212;
   --text-color: rgba(255,255,255,0.88);
   --text-secondary-color: rgba(255,255,255,0.66);
   --site-header: var(--background);
