@@ -8,7 +8,7 @@
     "url": "https://github.com/W3Layouts/gatsby-starter-delog/issues"
   },
   "dependencies": {
-    "gatsby": "^2.21.0",
+    "gatsby": "^2.25.3",
     "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-google-analytics": "^2.1.36",
     "gatsby-plugin-manifest": "^2.4.1",
@@ -18,9 +18,11 @@
     "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sitemap": "^2.4.0",
     "gatsby-remark-emojis": "^0.4.2",
+    "gatsby-remark-katex": "^3.3.14",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^2.9.2",
+    "katex": "^0.12.0",
     "netlify-cms-app": "^2.11.13",
     "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
