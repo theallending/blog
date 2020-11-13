@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /hello-world
+path: /intro_small_area_estimation
 date: 2020-11-10T10:00:50.137Z
 title: Using Small Area Estimation Techniques to Reduce Survey Sample Sizes
 thumbnail: ''
