@@ -57,7 +57,7 @@ The theory of Empirical Best Linear Unbiased Prediction (EBLUP) can be applied t
 #3 - Direct Estimation
 
 ###3.1 - Simulating Survey Estimates
-```r
+```js
 library(ggplot2)
 library(dplyr)
 #testing syntax highlighting
