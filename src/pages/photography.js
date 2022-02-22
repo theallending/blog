@@ -20,9 +20,9 @@ const PhotographyPage = ({
     </Layout>
   )
 }
-export default ResumePage
+export default PhotographyPage
 export const pageQuery = graphql`
-  query ResumePageQuery{
+  query PhotographyPageQuery{
     site {
       siteMetadata {
         title
