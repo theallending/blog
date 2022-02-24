@@ -16,6 +16,7 @@ const ResumePage = ({
       </Helmet>
       <div className="post">
           <h1 className="post-title">Resume</h1>
+          <iframe src="/assets/Resume.pdf#toolbar=0" width="100%" height="800px">
       </div>
     </Layout>
   )
