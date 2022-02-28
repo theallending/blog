@@ -7,7 +7,7 @@ thumbnail: ''
 metaDescription: small area estimation
 ---
 
-#1 - Introduction 
+# 1 - Introduction 
 
 With the advent of the technological age, collecting data has never been easier. For example, social media companies can track their users' behaviour, mobile service providers can see how people move across geographies, and financial service companies can identify their clients' spending patterns. The sheer volume of data that is available at a person-level is shaping how entire industires evolve. 
 
@@ -15,7 +15,7 @@ However, the majority of this data is considered as **non-probabilistic** data, 
 
 Luckily, non-probabilistic data can be integrated with probabilistic data using **small area estimation** modelling techniques. By doing so, it can drastically increase the precision of the statistical estimates OR reduce the sample size needed to reach the same level of precision.
 
-#2 - Small Area Estimation
+# 2 - Small Area Estimation
 
 The most common small area estimation method is the **basic area-level model**, which can be thought of as weighted average of a survey estimate and a regression synthetic estimate from a linear mixed regression model.
 
@@ -54,7 +54,7 @@ This model was first used by R.E. Fay and R.A. Herriot in 1979 to estimate the p
 
 The theory of Empirical Best Linear Unbiased Prediction (EBLUP) can be applied to the basic area-level model to derive estimates for $\bm{\beta}$ and $\sigma^2_v$. A brief summary of the EBLUP theory is given below. For more information, please refer to *Small Area Estimation* (2015) by J.N.K Rao and Isabel Molina.
 
-#3 - Direct Estimation
+# 3 - Direct Estimation
 
 ###3.1 - Simulating Survey Estimates
 ```js
@@ -65,11 +65,11 @@ library(dplyr)
 normal_data <- rnorm(10000, 5, 20)
 ```
 
-#4 -  Model-Based Estimation
+# 4 -  Model-Based Estimation
 
-###4.1 - Simulating Non-Probabilistic Data
+### 4.1 - Simulating Non-Probabilistic Data
 
 
-###4.2 - Model Creation
+### 4.2 - Model Creation
 
-#5 - Model Diagnostics
+# 5 - Model Diagnostics
