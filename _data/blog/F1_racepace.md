@@ -1,7 +1,7 @@
 ---
 template: BlogPost
-path: /hamilton
-date: 2021-11-10T09:35:36.571Z
+path: /Formula1_RacePace_FastF1
+date: 2022-01-27T09:35:36.571Z
 title: "Formula 1: Using the FastF1 Python API to visualize race pace"
 thumbnail: /assets/lewis.jpg
 ---
@@ -14,7 +14,7 @@ The [FastF1 Python API](https://github.com/theOehrly/Fast-F1) is a simple way to
 
 ### Race Pace
 
-Race pace is defined as, on average, how fast a Formula 1 car can complete a lap during a Grand Prix. Faster race pace in one Formula 1 car usually results in a higher finishing position than a car with a slower race pace. 
+Race pace is defined as, on average, how fast a Formula 1 car can complete a lap during a Grand Prix. A faster race pace in one Formula 1 car usually results in a higher finishing position than a car with a slower race pace. 
 
 ### Tyre Compound
 
@@ -44,15 +44,35 @@ Due to the sensitive aerodynamic and mechanical nature of Formula 1 cars, laptim
 
 # <u> Using the FastF1 API </u> 
 
+
+```python
+import fastf1 as ff1
+from fastf1 import plotting
+
+# Load the session data
+race = ff1.get_session(2021, 'Abu Dhabi', 'R').get_race
+
+# Extract data for each lap
+laps = race.load_laps()
+
+# Convert laptimes to seconds
+laps['LapTimeSeconds'] = laps['LapTime'].dt.total_seconds()
+
+# To get accurate laps only, we exclude in/out laps
+laps = laps.loc[(laps['PitOutTime'].isnull() & laps['PitInTime'].isnull())]
+```
+<br/>
+
 # <u> Data Preparation </u> 
 
 # <u> Data Visualization </u> 
 
-Of all the many ways to effectively visualize race pace distribution; the simplest has to be the boxplot. The boxplot shows enough information visually to infer some sort of spread to the data. A boxplot shows the median, interquartile range, maximum/minimum, and the presence of outliers. Let's start by plotting the lap times by driver using the base R function <i>boxplot</i>().
+Of all the many ways to effectively visualize race pace distribution; the simplest has to be the boxplot. The boxplot visually shows enough information to infer some sort of spread to the data. A boxplot shows the median, interquartile range, maximum/minimum, and the presence of outliers. Let's start by plotting the lap times by driver using the base R function <i>boxplot</i>().
 
 ### Boxplot (base R)
 
-```js
+```r
+# Plot lap time by driver
 boxplot(f1$LapTimeSeconds ~ f1$Driver, 
 		ylab = "Lap Time (sec.)", 
 		xlab = "Driver", 

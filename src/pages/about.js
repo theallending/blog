@@ -18,6 +18,14 @@ const AboutPage = ({
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/about.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">About Me</h1>
         </div>
+        <br/>
+        Welcome to my blog!
+        <br/> <br/>
+
+        I made this website initially as a way to learn some front-end development (HTML, CSS, JS) to accompany my statistical programming background. 
+
+        <br/> <br/>
+        Wow using raw HTML absolutely sucks. I will switch to loading a Markdown file for this page instead.
       </div>
 
     </Layout>
