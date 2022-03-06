@@ -10,8 +10,8 @@ thumbnail: /assets/chess.jpg
 
 # <u> The Opening </u>
 
-<div class="video-container">
-<iframe id="8995097" allowtransparency="true" frameborder="0" style="width:80%;border:none;" src="//www.chess.com/emboard?id=8995097"></iframe><script>window.addEventListener("message",e=>{e['data']&&"8995097"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+<div class="chess-container">
+<iframe id="8995097" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=8995097"></iframe><script>window.addEventListener("message",e=>{e['data']&&"8995097"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
 </div>
 
 # <u> Variations </u>
