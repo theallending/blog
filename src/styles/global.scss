@@ -66,7 +66,7 @@ a {
 }
 .site-wrapper {
   padding: 32px;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
   img {
     max-width: 100%;
@@ -154,7 +154,7 @@ a {
   color: var(--text-color);
   line-height: 1.5;
   > .blog-post-content {
-    max-width: 768px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   > .blog-post-content *:last-child,
@@ -404,4 +404,30 @@ body.light {
     box-shadow: 0 0 0 2px;
     top: 8px;
     left: 2px
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 90%;
+}
+.pdf-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
 }

@@ -2,7 +2,7 @@
 template: BlogPost
 path: /intro_small_area_estimation
 date: 2020-11-10T10:00:50.137Z
-title: Using Small Area Estimation Techniques to Reduce Survey Sample Sizes
+title: "Sampling Theory: Using Small Area Estimation Techniques to Reduce Survey Sample Sizes"
 thumbnail: ''
 metaDescription: small area estimation
 ---
@@ -56,8 +56,8 @@ The theory of Empirical Best Linear Unbiased Prediction (EBLUP) can be applied t
 
 # 3 - Direct Estimation
 
-###3.1 - Simulating Survey Estimates
-```js
+### 3.1 - Simulating Survey Estimates
+```PHP
 library(ggplot2)
 library(dplyr)
 #testing syntax highlighting

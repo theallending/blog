@@ -17,6 +17,11 @@ const ResumePage = ({
       <div className="post">
           <h1 className="post-title">Resume</h1>
       </div>
+      <div class="pdf-container">
+        <iframe src="https://drive.google.com/file/d/0B9OJ8XJkymIVdHdfQ29xa2k1VG8/preview?resourcekey=0-Jn3poTyVcgrTcBUfU2FtLQ" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+
+
     </Layout>
   )
 }
